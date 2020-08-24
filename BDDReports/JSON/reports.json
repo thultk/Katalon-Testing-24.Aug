@@ -1,0 +1,86 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 12,
+        "name": "Test login with valid credentials",
+        "description": "",
+        "id": "login-to-orangehrm;test-login-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2769404000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to OrangeHRM Page",
+            "match": {
+              "location": "LoginOrangeHRMDef.navigateToOrangeHRM()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1277191700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters Admin and admin123",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 12
+                },
+                {
+                  "val": "admin123",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginOrangeHRMDef.enterUsernamePassword(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3143777600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User clicks on Login button",
+            "match": {
+              "location": "LoginOrangeHRMDef.clickLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 302100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is navigated to Welcome Page",
+            "match": {
+              "location": "LoginOrangeHRMDef.navigateToWelcome()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@valid"
+          }
+        ]
+      }
+    ],
+    "name": "Login to OrangeHRM",
+    "description": "",
+    "id": "login-to-orangehrm",
+    "keyword": "Feature",
+    "uri": "Include/features/LoginOrange.feature",
+    "tags": []
+  }
+]
